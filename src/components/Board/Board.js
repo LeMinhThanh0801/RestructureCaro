@@ -31,3 +31,4 @@ const Board = ({winLine, squares, onClick}) => {
       
     return <div>{this.createTheBoard()}</div>;
 }
+export default Board

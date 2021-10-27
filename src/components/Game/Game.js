@@ -162,3 +162,5 @@ const Game = (props) => {
       isDraw: isDraw,
     };
   };
+
+export default Game
