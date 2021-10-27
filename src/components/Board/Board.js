@@ -2,12 +2,12 @@ import Square from '../Square/Square';
 
 const Board = ({winLine, squares, onClick}) => {
     const renderSquare = (i) => {
-      const winLine = props.winLine;
+      // const winLine = winLine;
       return (
         <Square
           key={i}
-          value={props.squares[i]}
-          onClick={() => props.onClick(i)}
+          value={squares[i]}
+          onClick={() => onClick(i)}
           highlight={winLine && winLine.includes(i)}
         />
       );
@@ -29,6 +29,6 @@ const Board = ({winLine, squares, onClick}) => {
       return squares;
     }
       
-    return <div>{this.createTheBoard()}</div>;
+    return <div>{createTheBoard()}</div>;
 }
 export default Board
